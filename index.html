@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tracKING</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; margin: 25px; padding: 0px;">
+    <style>
+        #h1 {
+            font-family:'Space Grotesk' ;
+            color: white;
+        }
+        #descripcion {
+            color: rgb(127, 151, 207);
+            font-family: 'TikTok Display', sans-serif;
+            font-weight: 600;
+            font-size: 12pt;
+        }
+        #Topmenu {
+            z-index: 2;
+            position: fixed;
+            left: 20px;
+            right: 20px;
+            top: 0;
+        }
+        #menu {
+            z-index: 1;
+        }
+        #opciones a {
+            text-decoration: none;
+            color: #1431a2;
+        }
+        #grafico-container {
+            top: 50%;
+            right: 50px;
+            transform: translateY(-50%);
+        
+        }
+        .contenedor-tablas {
+            width: 50%;
+            margin-right: 20px;
+        }
+        #h1 {
+            margin-top: 10px;
+        }
+
+        .tabla-interna {
+            width: 100%;
+            border-radius: 20px;
+            background-color: #FFFFFF;
+            padding: 20px;
+        }
+
+        .texto-comisiones {
+            color: #0532A9;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .fecha {
+            color: #666666;
+        }
+    </style>
+    </style>
+    <div id="Topmenu" style="background-color: #1431a2; padding: 20px; border-bottom-left-radius: 50px;border-bottom-right-radius: 50px; margin: 0px;">
+       <center>
+        <div style="background-color: #1431a2; padding: 20px; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; margin: 0px; text-align: center;">
+            <table style="background-color: #1431a2; margin: 10px; width: 100%; border-spacing: 0;">
+                <tr id="descripcion">
+                    <td>
+                        <br>
+                     </td>
+                     <td style="text-align: right;"> Balance general
+                     </td> 
+                 </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <h1 style="color: #F8C7CA; font-size: 54pt; font-family: 'Space Grotesk'; margin: 0;">tracKING <sup style="font-size: 10pt;">3</sup></h1>
+                    </td>
+                    <td style="text-align: right;">
+                        <span style="font-size: 24pt; vertical-align: top;color: #F8C7CA;">$</span><h1 id="h1" style="font-size: 56pt; display: inline; vertical-align: top">1.000.000</h1>   
+                    </td>
+                </tr>
+                <tr id="descripcion">
+                   <td>
+                        <p style="color:rgb(127, 151, 207); text-align: left; margin-top: 0pt;">Tracker de finanzas</p>
+                    </td>
+                    <td style="text-align: right;"> C O P
+                    </td> 
+                </tr>
+            </table>
+        </div>
+        </center>
+    </div>
+    <div id="menu" style="position: fixed; top: 0; left: 0; width: 250px; height: 100%; background-color: #F5F5F5; padding: 20px; box-sizing: border-box;padding-top: 350px;z-index: 1; font-weight: 500;font-family: 'TikTok Display';">
+        <div id="opciones" style="margin-bottom: 20px;text-decoration: none;">
+            <a href="#" style="display: block; margin-bottom: 10px;">General</a>
+            <a href="#" style="display: block; margin-bottom: 10px;">Prestamos & Deudas</a>
+            <a href="#" style="display: block; margin-bottom: 10px;">Suscripciones</a>
+            <a href="#" style="display: block; margin-bottom: 10px;">Ahorro</a>
+        </div>
+        <div id="perfil" style="position: absolute; bottom: 20px; left: 20px; text-align: left; color: #1431a2;">
+            <img src="https://pbs.twimg.com/profile_images/1594518368643698689/6aCeDO8i_400x400.jpg" alt="Foto de perfil" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 10px;">
+            <h1 style="font-size: 18px; margin-bottom: 5px; font-family: 'Space Grotesk';">Nico Rueda</h1>
+            <p style="font-size: 8pt; margin: 0;color: #99a3bd;font-family: 'Tiktok Display';">Administrar perfil</p>
+        </div>
+    </div> 
+    <table style="float: right; padding: 20px;" >
+        <tr>
+            <td>
+            <div id="grafico-container" style="width: 150px; height: 150px; border-radius: 50%; background-color: transparent; border: 10px solid #1431a2; position: relative;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 50%; background-color: transparent; border: 10px solid #F8C7CA;"></div>
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 50%; background-color: #7f97cf; transform: rotate(288deg);"></div>
+            <div style="position: absolute; top: 0; left: 0; width: 90%; height:90%; border-radius: 50%; background-color: #F9F9F9;align-self: center;"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <h1 style="color: #1431a2;" id="h1">ESTADÍSTICAS</h1>
+            </td>
+        </tr>
+    </table>
+
+    <table style="padding: 20px;margin-top: 300px; float: right;">
+        <tr>
+            <td id="ganancias">
+                <h1 id="h1" style="color: #1431a2;">GANANCIAS</h1>
+            </td>
+            <td id="gastos">
+                <h1 style="color: #1431a2;" id="h1">GASTOS</h1>
+            </td>
+        </tr>
+    </table>
+
+    <table style="float: right;">
+        <tr>
+            <td>
+                <div class="tabla-interna">
+                    <img src="https://cdn4.iconfinder.com/data/icons/48-bubbles/48/02.Shop-256.png" alt="Foto de perfil" style="width: 100px; height: 100px; border-radius: 50%;">
+                </div>
+            </td>
+            <td>
+                <div class="tabla-interna">
+                    <p class="texto-comisiones">Pago por comisiones</p>
+                    <p class="fecha">06 de abril</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
